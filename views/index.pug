@@ -3,3 +3,10 @@ extends layout
 block content
   h1= title
   p Welcome to #{title}
+  p(class="hhee") Messages
+
+  div
+    each item in mes
+      p= item.text
+      p= item.author 
+      p= item.added

@@ -18,7 +18,8 @@ const messages = [
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  res.render('index', { title: 'Hellloooooooo' });
+  res.render('index', { title: 'Hellloooooooo', mes: messages });
 });
 
 module.exports = router;
+
