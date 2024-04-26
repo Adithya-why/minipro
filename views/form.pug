@@ -1,0 +1,13 @@
+extends layout
+
+block content 
+    h1 fill the form
+
+    form(method="POST" action="/") 
+        p Name: 
+        input(type="text" name="username")
+
+        p Message: 
+        input(type="text", name="usermessage")
+
+        input(type="submit")

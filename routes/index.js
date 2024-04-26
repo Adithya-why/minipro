@@ -21,5 +21,11 @@ router.get('/', function(req, res, next) {
   res.render('index', { title: 'Hellloooooooo', mes: messages });
 });
 
+
+router.post('/',function(req,res){
+  messages.push({text: req.body.usermessage, user: req.body.username, added: new Date()})
+  res.redirect('/');
+});
+
 module.exports = router;
 

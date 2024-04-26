@@ -4,7 +4,12 @@ var router = express.Router();
 
 
 router.get('/',function(req,res){
-    res.send("HI nEWIE")
+    res.render('form');
 });
+
+
+
+
+
 
 module.exports = router;
